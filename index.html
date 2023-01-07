@@ -5,7 +5,7 @@
 <!-- Head Tag is first child of html tag. Site page information for web browsers and  Search engines. -->
 <head>
   <!-- Title tag is used only once inside head tag. Title is always displayed in browsers  tab. -->
-  <title>My first website</title>
+  <title>HTML Forms</title>
 
   <!-- Meta tag is used to define the charset family, description, keywords, Author, robots  and Geo Location of a website. -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,54 +15,46 @@
 <!-- Body tag is used to create the page structure or content. -->
 <body>
 <!-- The <h1> to <h6> tags are used to define HTML headings.  -->
-<h1>My First Website</h1>
-<h2>My First Website</h2>
-<h3>My First Website</h3>
-<h4>My First Website</h4>
-<h5>My First Website</h5>
-<h6>My First Website</h6>
+<h1>HTML Forms</h1>
 
-<!-- The <p> tag defines a paragraph. -->
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima voluptas et ducimus officiis assumenda illo quia necessitatibus molestias aspernatur nobis, atque quaerat, neque dolores dolorem qui labore officia. Asperiores, assumenda!</p>
+<form method="post">
+  <label for="">First name</label>
+  <input type="text" placeholder="First name">
+  <br/>
 
-<span>
-  <!-- If the a element has an href attribute, then it represents a hyperlink (a hypertext anchor) labeled by its contents. -->
-  Visit <a href="https://www.google.com/">google.com</a>
-</span>
-<!-- An img element represents an image. -->
-<img src="https://media.istockphoto.com/photos/programming-source-code-abstract-background-picture-id1047259374?b=1&k=20&m=1047259374&s=612x612&w=0&h=7TMYTW-rccv_qf_O62FtlghaW8-XlOkMOh_Vh6xlQBg=">
+  <label for="">Last name</label>
+  <input type="text" placeholder="Last name">
+  <br/>
 
-<p><b>Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. Inventore voluptate <i>voluptas eos nihil earum</i> sunt veniam ab facere eveniet maiores nobis rem ipsum, quam cupiditate distinctio dolores? <u>Aut, autem. Eaque.</u></p>
+  <label for="">Email</label>
+  <input type="email" placeholder="Email">
+  <br/>
+
+  <label for="">Password</label>
+  <input type="password" placeholder="Password">
+  <br/>
+
+  <label for="">Age</label>
+  <input type="number" placeholder="Age">
+  <br/>
+
+  <label for="">Birthday</label>
+  <input type="date" >
+  <br/>
+
+  <label for="">Gender</label>
+  <br/>
+  <input type="radio" name="gender" value="Male"><span>Male</span>
+  <input type="radio" name="gender" value="Female"><span>Female</span>
+  <br/>
+  
+  <label for="">College Attainment</label>
+  <select name="" >
+    <option value="Undergraduate">Undergraduate</option>
+    <option value="Associate Degree">Associate Degree</option>
+    <option value="Bachelor's Degree">Bachelor's Degree</option>
+  </select>
+</form>
 </body>
-
-<ul type="circle">
-  <li>one</li>
-  <li>two</li>
-  <li>three</li>
-</ul>
-
-<ul type="disc">
-  <li>one</li>
-  <li>two</li>
-  <li>three</li>
-</ul>
-
-<ul type="square">
-  <li>one</li>
-  <li>two</li>
-  <li>three</li>
-</ul>
-
-<ol type="A">
-  <li>one</li>
-  <li>two</li>
-  <li>three</li>
-</ol>
-
-<ol type="I">
-  <li>one</li>
-  <li>two</li>
-  <li>three</li>
-</ol>
 
 </html>
