@@ -1,11 +1,17 @@
 # Intro to Web Development
 
 ## HTML
+- Going through table tag
+  - <table>
+  - <th>
+  - <tr>
+  - <td>
+  - <caption>
+  - <colgroup>
+  - <col>
+  - <thead>
+  - <tbody>
+  - <tfoot>
 
-- Introduction to what is HTML
-- HTML structure
-- Going through each elements
-  - tags
-  - attributes
 - Activities
-  - Create a HTML page that shows things about you (Name, short introduction, current work/school, hobbies)
+  - Create a list of students using tables
