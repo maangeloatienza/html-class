@@ -2,10 +2,9 @@
 
 ## HTML
 
-- Introduction to what is HTML
-- HTML structure
 - Going through each elements
-  - tags
-  - attributes
+  - image tag
+  - lists
+  - link tag
 - Activities
-  - Create a HTML page that shows things about you (Name, short introduction, current work/school, hobbies)
+  - With the newly added knowledge apply to the previous activity this new tags you've learned
