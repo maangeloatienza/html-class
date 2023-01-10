@@ -2,7 +2,6 @@
 
 ## HTML
 
-#### Day 1
 - Introduction to what is HTML
 - HTML structure
 - Going through each elements
