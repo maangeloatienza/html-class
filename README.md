@@ -1,17 +1,11 @@
 # Intro to Web Development
 
 ## HTML
-- Going through table tag
-  - <table>
-  - <th>
-  - <tr>
-  - <td>
-  - <caption>
-  - <colgroup>
-  - <col>
-  - <thead>
-  - <tbody>
-  - <tfoot>
+- Going through html semantics
+  - <nav>
+  - <header>
+  - <aside>
+  - <article>
 
 - Activities
-  - Create a list of students using tables
+  - Add necessary tags that suites our activity with Biography page
