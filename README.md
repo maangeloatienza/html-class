@@ -6,6 +6,8 @@
   - <header>
   - <aside>
   - <article>
+  - <main>
+  - <section>
 
 - Activities
   - Add necessary tags that suites our activity with Biography page
