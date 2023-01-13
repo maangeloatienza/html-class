@@ -15,46 +15,144 @@
 <!-- Body tag is used to create the page structure or content. -->
 <body>
 <!-- The <h1> to <h6> tags are used to define HTML headings.  -->
-<h1>HTML Forms</h1>
+<h1>Multimedia Elements</h1>
 
-<form method="post">
-  <label for="">First name</label>
-  <input type="text" placeholder="First name">
-  <br/>
+<h2>Audio</h2>
 
-  <label for="">Last name</label>
-  <input type="text" placeholder="Last name">
-  <br/>
+<!-- The <source> tag or the src attribute is used to indicate the variations of the same audio file. The path to an audio file can contain an absolute or relative URLs. -->
+<!-- 
+  elements
+  * controls - Displays the control panel (start button, scroll, volume control). If the controls attribute is missing, the audio file will not be displayed on the page.
+  * autoplay - Plays the audio file automatically after loading the page.
+  * muted - Mutes the sound when the audio file is played.
+  * loop - Repeats continuously the audio file from the beginning after its completion.
+  * preload - Defines what browser should do, if the attribute controls is not specified.
+    > auto - Playback starts after the page is loaded.
+    > metadata - Tells the browser to upload a small portion of the file to determine its main characteristics: (for example, file size).
+    > none - Playback starts only after clicking the corresponding button.
+  * src
+    > url - Specifies the path to the audio file.
+ -->
+<audio controls>
+  <source src="https://cdn.freesound.org/previews/669/669517_5674468-lq.mp3" type="audio/mpeg">
+</audio>
 
-  <label for="">Email</label>
-  <input type="email" placeholder="Email">
-  <br/>
-
-  <label for="">Password</label>
-  <input type="password" placeholder="Password">
-  <br/>
-
-  <label for="">Age</label>
-  <input type="number" placeholder="Age">
-  <br/>
-
-  <label for="">Birthday</label>
-  <input type="date" >
-  <br/>
-
-  <label for="">Gender</label>
-  <br/>
-  <input type="radio" name="gender" value="Male"><span>Male</span>
-  <input type="radio" name="gender" value="Female"><span>Female</span>
-  <br/>
+<!-- There are 3 supported video formats for the <video> element: MP4/MPEG 4, WebM, and Ogg. For the compression/decompression of large video files special programs, codecs, are used.
   
-  <label for="">College Attainment</label>
-  <select name="" >
-    <option value="Undergraduate">Undergraduate</option>
-    <option value="Associate Degree">Associate Degree</option>
-    <option value="Bachelor's Degree">Bachelor's Degree</option>
-  </select>
-</form>
+  * controls - Displays the control panel (start button, scroll, volume control). If the controls attribute is missing, the audio file will not be displayed on the page.
+  * autoplay - Specifies that the video will start playing automatically as soon as it is ready.
+  * muted - Mutes the sound when the audio file is played.
+  * loop - Repeats continuously the audio file from the beginning after its completion.
+  * preload - Defines what browser should do, if the attribute controls is not specified.
+  * height - Sets the height of the video player. 
+    > pixels
+  * poster - Sets an image that will be shown while the video is downloading, or until the user hits the play button.
+    > url
+  * width - Sets the width of the video player
+    > pixels
+
+-->
+
+
+<h2>Video</h2>
+
+<video controls height="200" width="300" controls autoplay>
+  <source src="https://static.videezy.com/system/resources/previews/000/012/040/original/Fire_17_-_45s_-_4k_res.mp4" type="video/ogg">
+</video>
+<!-- 
+  The <embed> tag is used as a container for external applications, multimedia and interactive content that the browser doesn’t understand.
+
+  *align - Specifies the alignment of the embedded content on the page and the way it is wrapped around the text.
+    > left - Aligns to the left.
+    > right -	Aligns to the right.
+    > center -	Aligns the center.
+    > justify - Aligns to the right and left edges.
+  * height -	Defines the height of the embedded content.
+    > pixels
+  * pluginspage - Address, from where we can download and install necessary plug-in.
+    > URL	
+  * src	- Indicates the path to the file which will be inserted in the <embed> tag.
+    > URL	
+  * type - Defines the MIME type (specification for the transmission over the network of files of various types) of the embedded content.
+    > MIME-type
+  * vspace - Defines the vertical indent from the embedded content to the surrounding one.
+    > pixels
+  * width - Defines the width of the embedded content.
+    > pixels
+ -->
+
+<h2>embed</h2>
+  <embed type="video/ogg" 
+    src="https://www.youtube.com/embed/bZNEB_o3Hzw?ecver=2" 
+    width="300" 
+    height="200" 
+    title="videezy free video"
+    align="justify"
+    vspace="100"
+    >
+<!-- 
+
+  * data - Specifies the URL of the resource to be used by the object
+    > URL
+  * form - Specifies which form the object belongs to
+    > form_id
+  * height -Specifies the height of the object
+    > pixels
+  *name - Specifies a name for the object
+  *typeSpecifies - the media type of data specified in the data attribute
+    > media_type
+  * typemustmatch - Specifies whether the type attribute and the actual content of the resource must match to be displayed
+    > boolean (true/false)
+usemap	#mapname	Specifies the name of a client-side image map to be used with the object
+width	pixels	Specifies the width of the object
+
+ -->
+
+<h2>Object</h2>
+  <object width="320" height="240" data="https://www.youtube.com/embed/bZNEB_o3Hzw?ecver=2"></object>
+
+
+<h2>iframe</h2>
+<!-- 
+  The <iframe> tag creates an inline frame for embedding third-party content (media, applets, etc.). Although the content of the frame and the web page are independent, they can interact through JavaScript.
+
+ 
+  * allow - Specifies a feature policy for the <iframe>
+  * allowfullscreen	- Set to true if the <iframe> can activate fullscreen mode by calling the requestFullscreen() method
+    > boolean (true/false)
+  * allowpaymentrequest - Set to true if a cross-origin <iframe> should be allowed to invoke the Payment Request API
+    > boolean (true/false)
+  * height - Specifies the height of an <iframe>. Default height is 150 pixels
+    > pixels
+  * loading - Specifies whether a browser should load an iframe immediately or to defer loading of iframes until some conditions are met
+    > eager/lazy
+  * name - Specifies the name of an <iframe>
+    > name (text)
+  * referrerpolicy -  Specifies which referrer information to send when fetching the iframe
+    > no-referrer
+    > no-referrer-when-downgrade
+    > origin
+    > origin-when-cross-origin
+    > same-origin
+    > strict-origin-when-cross-origin
+    > unsafe-url
+  * sandbox	- Enables an extra set of restrictions for the content in an <iframe>
+    > allow-forms
+    > allow-pointer-lock
+    > allow-popups
+    > allow-same-origin
+    > allow-scripts
+    > allow-top-navigation
+
+  * src	- Specifies the address of the document to embed in the <iframe>
+    > URL
+  * srcdoc - Specifies the HTML content of the page to show in the <iframe>
+    > HTML_code
+  * width -Specifies the width of an <iframe>. Default width is 300 pixels
+    > pixels
+ -->
+ <iframe src="https://www.w3docs.com"></iframe>
+
 </body>
 
 </html>
